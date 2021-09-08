@@ -82,21 +82,22 @@ $(function () {
   var nextArrow='<button class="carousel-control-next border-0"> <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></button>'; 
   var prevArrow = '<button class="carousel-control-prev border-0"> <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></button>';
   $(".slider4").slick({
-          infinite: true,
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          nextArrow:nextArrow,
-          prevArrow:prevArrow,
-          responsive: responsive_slide(4),
-          
-        });
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: nextArrow,
+    prevArrow: prevArrow,
+    responsive: responsive_slide(4),
+    autoplay: true,
+  });
         $(".slider3").slick({
           infinite: true,
           slidesToShow: 3,
           slidesToScroll: 1,
-          nextArrow:nextArrow,
-          prevArrow:prevArrow,
+          nextArrow: nextArrow,
+          prevArrow: prevArrow,
           responsive: responsive_slide(3),
+          autoplay: true,
         });
        $(".slider-for").slick({
          asNavFor: ".slider-nav",
@@ -110,10 +111,11 @@ $(function () {
          asNavFor: ".slider-for",
          nextArrow: nextArrow,
          prevArrow: prevArrow,
-         centerMode: true,
          focusOnSelect: true,
-         centerPadding: "40px",
        });
+       if (window.matchMedia("(max-width: 768px)").matches) {
+         $("#comment").slick();
+       } 
     });
     function responsive_slide(slideNumber){
       return [
