@@ -34,7 +34,7 @@
                     
                     <ul class="navbar-nav nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../home-page.html">الرئيسية</a>
+                            <a class="nav-link" href="../index.html">الرئيسية</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../content-pages/about-us-page.html">تعرف علينا</a>
@@ -108,7 +108,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb bg-transparent p-0">
                     
-                    <li class="breadcrumb-item"><a href="../home-page.html">الرئيسية</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html">الرئيسية</a></li>
                     <li class="breadcrumb-item"><a href="sections.html">الاقسام</a></li>
                     <li class="breadcrumb-item">وجبات مميزة</li>
                 </ol>
@@ -567,7 +567,7 @@
             </ul>
             </nav>
             <div class="modal fade" id="add-product" tabindex="-1" aria-labelledby="add-productLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-dialog modal-dialog-centered modal-lg p-0">
                 <div class="modal-content">
                 <div class="modal-header border-0">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -576,7 +576,7 @@
                 </div>
                 <div class="modal-body">
                     <form action="">
-                        <div class="row p-5">
+                        <div class="row p-md-5">
                             
                         <div class="col-12">
                             <div class="form-group">
@@ -585,23 +585,26 @@
                                     <div class="col-md-6">
                                         <div class="custom-control custom-radio custom-control ">
                                             <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+                                            <div class="d-flex justify-content-between">
                                             <label class="custom-control-label mb-2 justify-content-between" for="customRadioInline1">الحجم الصغير</label>
-                                            <p class="float-left mx-5">16 ر.س</p>
-                                        </div>
+                                            <p >16 ر.س</p>
+                                        </div></div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="custom-control custom-radio custom-control ">
                                             <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+                                            <div class="d-flex justify-content-between">
                                             <label class="custom-control-label mb-2 justify-content-between" for="customRadioInline2">الحجم الوسط</label>
-                                            <p class="float-left mx-5">20 ر.س</p>
-                                        </div>
+                                            <p >20 ر.س</p>
+                                        </div></div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="custom-control custom-radio custom-control ">
                                             <input type="radio" id="customRadioInline3" name="customRadioInline" class="custom-control-input">
+                                            <div class="d-flex justify-content-between">
                                             <label class="custom-control-label mb-2 justify-content-between" for="customRadioInline3">الحجم الكبير</label>
-                                            <p class="float-left mx-5">35 ر.س</p>
-                                        </div>
+                                            <p >35 ر.س</p>
+                                        </div></div>
                                     </div>
                                 </div>
                             </div>
@@ -613,23 +616,25 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="custom-control custom-checkbox custom-control ">
-                                            <input type="checkbox" id="customcheckboxInline1" name="customcheckboxInline" class="custom-control-input">
+                                            <div class="d-flex justify-content-between">
                                             <label class="custom-control-label mb-2 justify-content-between" for="customcheckboxInline1">إضافة جبنة موتزاريلا</label>
-                                            <p class="float-left mx-5">+7 ر.س</p>
-                                        </div>
+                                            <p >+7 ر.س</p>
+                                        </div></div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="custom-control custom-checkbox custom-control ">
                                             <input type="checkbox" id="customcheckboxInline2" name="customcheckboxInline" class="custom-control-input">
+                                            <div class="d-flex justify-content-between">
                                             <label class="custom-control-label mb-2 justify-content-between" for="customcheckboxInline2">إضافة صوص حار</label>
-                                            <p class="float-left mx-5">+7 ر.س</p>
-                                        </div>
+                                            <p >+7 ر.س</p>
+                                        </div></div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="custom-control custom-checkbox custom-control ">
                                             <input type="checkbox" id="customcheckboxInline3" name="customcheckboxInline" class="custom-control-input">
+                                            <div class="d-flex justify-content-between">
                                             <label class="custom-control-label mb-2 justify-content-between" for="customcheckboxInline3">إضافة صوص باربيكيو</label>
-                                            <p class="float-left mx-5">+10 ر.س</p>
+                                            <p >+10 ر.س</p></div>
                                         </div>
                                     </div>
                                 </div>
@@ -679,13 +684,13 @@
                 </div>
                 <div class="modal-footer border-0 justify-content-center">
                     <div class="row pb-5">
-                        <div class="col-5">
+                        <div class="col-md-5 col-6">
                             <div class="input-group btn btn-light rounded-pill py-0" dir='ltr'>
                                 <input type="text" class="touchspin shadow-none border-0" value="{number}" />
                             </div>
                         </div>
-                        <div class="col">
-                            <button class="btn btn-dark rounded-pill px-3"data-dismiss="modal"onclick="show_toast('add-toast')">إضافة المنتج</button>
+                        <div class="col-md col-6">
+                            <button class="btn btn-dark rounded-pill px-md-3 btn-md-block"data-dismiss="modal"onclick="show_toast('add-toast')">إضافة المنتج</button>
                         </div>
                     </div>
                 </div>
@@ -782,9 +787,9 @@
     <!-- BEGIN: JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <script src="../../assets/js/plugin/jquery.bootstrap-touchspin.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
     <script src="../../assets/js/script.js"></script>
-    <script src="../../assets/js/plugin/jquery.bootstrap-touchspin.js"></script>
     <!-- END: JS-->
 
      <script>

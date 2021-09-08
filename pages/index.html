@@ -10,11 +10,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="../assets/images/logo.svg">
     <!-- BEGIN: CSS-->
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <link rel="stylesheet" href="../assets/css/plugin/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="../assets/css/plugin/jquery.bootstrap-touchspin.css">
+    <link rel="stylesheet" href="../../assets/css/plugin/sweetalert2.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap-rtl.css">
     <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
-    <link rel="stylesheet" href="../assets/css/plugin/jquery.bootstrap-touchspin.css">
-    <link rel="stylesheet" href="../../assets/css/plugin/sweetalert2.min.css">
+
     <!-- END: CSS-->
 </head>
 <body>
@@ -35,7 +38,7 @@
                     
                     <ul class="navbar-nav nav">
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="home-page.html">الرئيسية</a>
+                            <a class="nav-link text-primary" href="index.html">الرئيسية</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="content-pages/about-us-page.html">تعرف علينا</a>
@@ -44,7 +47,7 @@
                             <a class="nav-link" href="content-pages/blog-list-page.html">المدونة</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="content-pages/contact-page">تواصل معنا</a>
+                            <a class="nav-link" href="content-pages/contact-page.html">تواصل معنا</a>
                         </li>
                     </ul>
                     <hr class="d-lg-none d-block">
@@ -189,11 +192,11 @@
                 <h4 class="font-weight-bold">العروض</h4>
                 <h6><a href="menu/meals.html" class="text-muted">عرض الكل</a></h6>
             </div>
-            <div class="row ">
+            <div class="row mr-md-auto pr-md-2 slider4">
                 <div class="col-md-3 col-sm-6 col-12 mb-3 ">
-                    <a href="menu/meal-detail.html" class="text-dark text-decoration-none">
+                    
                     <div class="card card-link h-100">
-                        
+                        <a href="menu/meal-detail.html" class="text-dark text-decoration-none">
                         <img src="../assets/images/1/image-3@2x.png" class="card-img-top" >
                         <div class="card-body">
                             <div class="float-left">
@@ -212,13 +215,13 @@
                                 <span class="text-primary">16</span>
                                 <span>ر.س</span>
                             </p>
-                        </div>
+                        </div></a>
                     </div>
-                    </a>
+                    
                 </div>
                 <div class="col-md-3 col-sm-6 col-12 mb-3">
-                    <a href="menu/meal-detail.html" class="text-dark text-decoration-none">
                     <div class="card card-link h-100">
+                    <a href="menu/meal-detail.html" class="text-dark text-decoration-none">
                         <img src="../assets/images/1/image-2.png" class="card-img-top" >
                         <div class="card-body">
                             <div class="float-left">
@@ -238,8 +241,8 @@
                                 <span>ر.س</span>
                             </p>
                         </div>
-                    </div>
                     </a>
+                    </div>
 
                 </div>
                 <div class="col-md-3 col-sm-6 col-12 mb-3">
@@ -300,7 +303,7 @@
                 <h4 class="font-weight-bold">الاكثر مبيعا</h4>
                 <h6><a href="menu/meals-list.html" class="text-muted">عرض الكل</a></h6>
             </div>
-            <div class="row ">
+            <div class="row mr-md-auto pr-md-2 slider4">
                 <div class="col-md-3 col-sm-6 col-12 mb-3">
                     <a href="menu/meal-detail.html" class="text-dark text-decoration-none">
                     <div class="card card-link h-100">
@@ -360,7 +363,7 @@
                         <img src="../assets/images/1/image-5@2x.png" class="card-img-top" >
                         <div class="card-body">
                             <div class="float-left">
-                                <button class="btn-link btn p-0 shadow-none" onclick="show_toast('add','e')"><i class="fas fa-plus-circle "></i></button>
+                                <button class="btn-link btn p-0 shadow-none" onclick="show_toast('add')"><i class="fas fa-plus-circle "></i></button>
                                 <button class="btn-link btn p-0 shadow-none" onclick="show_toast('like')"><i class="far fa-heart"></i></button>
                             </div>
                             <h5 class="card-title">مشروم برجر</h5>
@@ -411,9 +414,32 @@
             <div class="my-4">
                 <h4 class="font-weight-bold text-center">ماذا يقول عملاؤنا</h4>
             </div>
-            <div class="row pt-3">
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="card mb-3">
+            <div class="row slider3 mr-md-auto pr-md-2">
+                <div class="col-md-4 col-sm-6 col-12 pt-3">
+                    <div class="card mb-3 h-100">
+                        <img src="../assets/images/1/left-quotes-sign.svg" class="left-quotes-icon">
+                        <div class="row no-gutters">
+                        <div class="col-md-2">
+                        <img src="../assets/images/1/avatar.png"class="rounded-circle m-3"width='56px'height='56px'>
+                        </div>
+                        <div class="col-md-10">
+                        <div class="card-body">
+                            <h5 class="card-title">عبدالله محمد</h5>
+                            <div>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="far fa-star text-warning"></span>
+                            </div>
+                            <p class="card-text">طعم رائع و خدمة ممتازة لكم منى كل الشكر</p>
+                        </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 pt-3">
+                    <div class="card mb-3 h-100">
                         <img src="../assets/images/1/left-quotes-sign.svg" class="left-quotes-icon">
                     <div class="row no-gutters">
                         <div class="col-md-2">
@@ -434,33 +460,9 @@
                         </div>
                     </div>
                     </div>
-
                 </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="card mb-3">
-                        <img src="../assets/images/1/left-quotes-sign.svg" class="left-quotes-icon">
-                    <div class="row no-gutters">
-                        <div class="col-md-2">
-                        <img src="../assets/images/1/avatar.png"class="rounded-circle m-3"width='56px'height='56px'>
-                        </div>
-                        <div class="col-md-10">
-                        <div class="card-body">
-                            <h5 class="card-title">عبدالله محمد</h5>
-                            <div>
-                                <span class="fa fa-star text-warning"></span>
-                                <span class="fa fa-star text-warning"></span>
-                                <span class="fa fa-star text-warning"></span>
-                                <span class="fa fa-star text-warning"></span>
-                                <span class="far fa-star text-warning"></span>
-                            </div>
-                            <p class="card-text">طعم رائع و خدمة ممتازة لكم منى كل الشكر</p>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="card mb-3">
+                <div class="col-md-4 col-sm-6 col-12 pt-3">
+                    <div class="card mb-3 h-100">
                         <img src="../assets/images/1/left-quotes-sign.svg" class="left-quotes-icon">
                     <div class="row no-gutters">
                         <div class="col-md-2">
@@ -484,12 +486,12 @@
                 </div>
             </div>
 
-            <div class="subscribe-form d-flex justify-content-center align-items-center" >
-                <div>
-                <h4 class="font-weight-bold text-white mb-5">اشترك ليصلك كل ما هو جديد</h4>
-                <form class="form-inline my-2 justify-content-center">
+            <div class="subscribe-form d-flex justify-content-center align-items-center " >
+                <div class="p-3">
+                <h4 class="font-weight-bold text-white mb-5 text-center">اشترك ليصلك كل ما هو جديد</h4>
+                <form class="d-flex my-2 justify-content-center">
                     <input type="text" class="form-control rounded-pill bg-transparent text-white  shadow-none p-3" dir="ltr" id="" name='' placeholder='ادخل بريدك الالكتروني'>
-                    <button class="btn btn-light rounded-pill font-weight-bold mx-2">اشترك</button>
+                    <button class="btn btn-light rounded-pill font-weight-bold mx-2 ">اشترك</button>
                 </form>
                 </div>
             </div>
@@ -497,7 +499,7 @@
             <div class="my-4">
                 <h4 class="font-weight-bold text-center">المدونة</h4>
             </div>
-            <div class="row ">
+            <div class="row mr-md-auto pr-md-2 slider3">
                 <div class="col-md-4 col-sm-6 col-12">
                     <div class="card card-info h-100">
                         <img src="../assets/images/1/image_1@2x.png" class="card-img-top" >
@@ -536,7 +538,7 @@
             <!-- start: modal-->
 
             <div class="modal fade" id="add-product" tabindex="-1" aria-labelledby="add-productLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-dialog modal-dialog-centered modal-lg p-0">
                 <div class="modal-content">
                 <div class="modal-header border-0">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -545,7 +547,7 @@
                 </div>
                 <div class="modal-body">
                     <form action="">
-                        <div class="row p-5">
+                        <div class="row p-md-5">
                             
                         <div class="col-12">
                             <div class="form-group">
@@ -554,23 +556,26 @@
                                     <div class="col-md-6">
                                         <div class="custom-control custom-radio custom-control ">
                                             <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+                                            <div class="d-flex justify-content-between">
                                             <label class="custom-control-label mb-2 justify-content-between" for="customRadioInline1">الحجم الصغير</label>
-                                            <p class="float-left mx-5">16 ر.س</p>
-                                        </div>
+                                            <p >16 ر.س</p>
+                                        </div></div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="custom-control custom-radio custom-control ">
                                             <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+                                            <div class="d-flex justify-content-between">
                                             <label class="custom-control-label mb-2 justify-content-between" for="customRadioInline2">الحجم الوسط</label>
-                                            <p class="float-left mx-5">20 ر.س</p>
-                                        </div>
+                                            <p >20 ر.س</p>
+                                        </div></div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="custom-control custom-radio custom-control ">
                                             <input type="radio" id="customRadioInline3" name="customRadioInline" class="custom-control-input">
+                                            <div class="d-flex justify-content-between">
                                             <label class="custom-control-label mb-2 justify-content-between" for="customRadioInline3">الحجم الكبير</label>
-                                            <p class="float-left mx-5">35 ر.س</p>
-                                        </div>
+                                            <p >35 ر.س</p>
+                                        </div></div>
                                     </div>
                                 </div>
                             </div>
@@ -582,23 +587,25 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="custom-control custom-checkbox custom-control ">
-                                            <input type="checkbox" id="customcheckboxInline1" name="customcheckboxInline" class="custom-control-input">
+                                            <div class="d-flex justify-content-between">
                                             <label class="custom-control-label mb-2 justify-content-between" for="customcheckboxInline1">إضافة جبنة موتزاريلا</label>
-                                            <p class="float-left mx-5">+7 ر.س</p>
-                                        </div>
+                                            <p >+7 ر.س</p>
+                                        </div></div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="custom-control custom-checkbox custom-control ">
                                             <input type="checkbox" id="customcheckboxInline2" name="customcheckboxInline" class="custom-control-input">
+                                            <div class="d-flex justify-content-between">
                                             <label class="custom-control-label mb-2 justify-content-between" for="customcheckboxInline2">إضافة صوص حار</label>
-                                            <p class="float-left mx-5">+7 ر.س</p>
-                                        </div>
+                                            <p >+7 ر.س</p>
+                                        </div></div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="custom-control custom-checkbox custom-control ">
                                             <input type="checkbox" id="customcheckboxInline3" name="customcheckboxInline" class="custom-control-input">
+                                            <div class="d-flex justify-content-between">
                                             <label class="custom-control-label mb-2 justify-content-between" for="customcheckboxInline3">إضافة صوص باربيكيو</label>
-                                            <p class="float-left mx-5">+10 ر.س</p>
+                                            <p >+10 ر.س</p></div>
                                         </div>
                                     </div>
                                 </div>
@@ -648,13 +655,13 @@
                 </div>
                 <div class="modal-footer border-0 justify-content-center">
                     <div class="row pb-5">
-                        <div class="col-5">
-                            <div class="input-group btn btn-light rounded-pill py-0" dir='ltr'>
+                        <div class="col-md-5 col-6">
+                            <div class="input-group btn btn-light rounded-pill py-0 " dir='ltr'>
                                 <input type="text" class="touchspin shadow-none border-0" value="{number}" />
                             </div>
                         </div>
-                        <div class="col">
-                            <button class="btn btn-dark rounded-pill px-3"data-dismiss="modal"onclick="show_toast('add-toast')">إضافة المنتج</button>
+                        <div class="col-md col-6">
+                            <button class="btn btn-dark rounded-pill px-md-3 btn-block"data-dismiss="modal"onclick="show_toast('add-toast')">إضافة المنتج</button>
                         </div>
                     </div>
                 </div>
@@ -1070,62 +1077,13 @@
     <!-- BEGIN: JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-
+    <script src="../assets/js/plugin/jquery.bootstrap-touchspin.js"></script>
+    <script src="../assets/js/plugin/sweetalert2.all.min.js"></script>
+    <script src="../assets/js/plugin/slick.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/script.js"></script>
-    <script src="../assets/js/plugin/jquery.bootstrap-touchspin.js"></script>
-    <script src="../../assets/js/plugin/sweetalert2.all.min.js"></script>
+    
     <!-- END: JS-->
- <script>
-        
 
-        $(document).ready(function () {
-        $('.touchspin').TouchSpin({
-            buttondown_class: "btn btn-link text-decoration-none text-dark",
-            buttonup_class: "btn btn-link text-decoration-none text-dark",
-        });
-        $('.modal').on("hidden.bs.modal", function (e) {
-                if ($('.modal:visible').length) {
-                    $('body').addClass('modal-open');
-                }
-            });
-        });
-        
-
-        var inputContainer = document.querySelector(".auth-input-wrapper");
-        inputContainer.onkeyup = function (e) {
-        var n = e.srcElement,
-            a = parseInt(n.attributes.maxlength.value, 10),
-            t = n.value.length;
-        if (8 === e.keyCode) {
-            if (0 === t)
-            for (var r = n; (r = r.previousElementSibling) && null != r; )
-                if ("input" == r.tagName.toLowerCase()) {
-                r.focus();
-                break;
-                }
-        } else if (t >= a)
-            for (r = n; (r = r.nextElementSibling) && null != r; )
-            if ("input" == r.tagName.toLowerCase()) {
-                r.focus();
-                break;
-            }
-        };
-
-        $("input[name='method']").click(function(){
-            $("input[name='method']").next().removeClass('active');   
-            $(this).next().addClass('active');
-            if($(this).next().hasClass('phone-method') ){
-                $('.phone-section').removeClass('d-none');   
-                $('.email-section').addClass('d-none');   
-            }else{
-                $('.phone-section').addClass('d-none');   
-                $('.email-section').removeClass('d-none');   
-            }
-        });
-        
-
-        
-    </script>
 </body>
 </html>

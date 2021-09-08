@@ -68,9 +68,13 @@ body{
     height: 37px;
     top: -25px;
     left: 50px;
+  
 }
+
 .subscribe-form {
     background-image: url('../images/1/Group 749.png');
+    background-position: center;
+     background-size: cover;
     margin: 0;
     width:100%;
     height: 263px;
@@ -139,6 +143,7 @@ body{
 /* end: progress step */
 
 /* start: card */
+
 .card {
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
@@ -146,6 +151,7 @@ body{
 .card.card-link:hover{
      transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  
 }
 .card.card-info:hover {
       box-shadow: 0 15px 10px -10px rgba(78, 62, 62, 0.5);
@@ -249,3 +255,27 @@ footer .rights{
     opacity: 0.7;
 }
 
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    padding: 10px;
+}
+.slick-slider:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #aaa transparent transparent transparent;
+    opacity: 0;
+}
