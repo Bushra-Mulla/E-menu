@@ -78,15 +78,15 @@ function show_toast(index, e) {
   $(`.toast#${index}`).toast("show");
 } 
 
-$(function () {console.log('object')
-        $(".slider4").slick({
+$(function () {
+  var nextArrow='<button class="carousel-control-next border-0"> <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></button>'; 
+  var prevArrow = '<button class="carousel-control-prev border-0"> <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></button>';
+  $(".slider4").slick({
           infinite: true,
           slidesToShow: 4,
           slidesToScroll: 1,
-          nextArrow:
-            '<button class="carousel-control-next border-0"> <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></button>',
-          prevArrow:
-            '<button class="carousel-control-prev border-0"> <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></button>',
+          nextArrow:nextArrow,
+          prevArrow:prevArrow,
           responsive: responsive_slide(4),
           
         });
@@ -94,12 +94,26 @@ $(function () {console.log('object')
           infinite: true,
           slidesToShow: 3,
           slidesToScroll: 1,
-          nextArrow:
-            '<button class="carousel-control-next border-0"> <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></button>',
-          prevArrow:
-            '<button class="carousel-control-prev border-0"> <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></button>',
+          nextArrow:nextArrow,
+          prevArrow:prevArrow,
           responsive: responsive_slide(3),
         });
+       $(".slider-for").slick({
+         asNavFor: ".slider-nav",
+         slidesToShow: 1,
+         arrows: false,
+       });
+
+       $(".slider-nav").slick({
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         asNavFor: ".slider-for",
+         nextArrow: nextArrow,
+         prevArrow: prevArrow,
+         centerMode: true,
+         focusOnSelect: true,
+         centerPadding: "40px",
+       });
     });
     function responsive_slide(slideNumber){
       return [

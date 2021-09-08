@@ -153,6 +153,20 @@ body{
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
   
 }
+@media (min-width: 768px) {
+  .card.detail{
+        box-shadow: none
+  }
+.card .detail-img-md{
+  box-shadow: 14px -9px 8px -9px rgba(22, 22, 26, 0.18);
+}
+
+.card .detail-md{
+  box-shadow:-14px 9px 8px -9px rgba(22, 22, 26, 0.18);
+  z-index: 2;
+}
+}
+
 .card.card-info:hover {
       box-shadow: 0 15px 10px -10px rgba(78, 62, 62, 0.5);
   transition: all 0.3s ease;
@@ -233,28 +247,6 @@ footer .rights{
 }
 /* end: footer */
 
-#myCarousel .list-inline {
-    white-space:nowrap;
-    overflow-x:auto;
-}
-
-#myCarousel .carousel-indicators {
-    position: static;
-    left: initial;
-    width: initial;
-    margin-left: initial;
-}
-
-#myCarousel .carousel-indicators > li {
-    width: initial;
-    height: initial;
-    text-indent: initial;
-}
-
-#myCarousel .carousel-indicators > li.active img {
-    opacity: 0.7;
-}
-
 .slick-track {
     position: relative;
     top: 0;
@@ -263,19 +255,6 @@ footer .rights{
     margin-left: auto;
     margin-right: auto;
     float: left;
-    padding: 10px;
 }
-.slick-slider:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -18px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 20px 20px 0 20px;
-    border-color: #aaa transparent transparent transparent;
-    opacity: 0;
-}
+
+.slider-nav .slick-slide { cursor: pointer; }
