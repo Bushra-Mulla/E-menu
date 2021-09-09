@@ -360,11 +360,14 @@
     <script src="../../assets/js/script.js"></script>
     <!-- END: JS-->
     <script>
-        window.onresize = function(){
-            location.reload();
-        }
+         window.onresize = function(){
+             if (window.matchMedia("(max-width: 576px)").matches) {
+                location.reload();
+             }
+            }
         $(document).ready(function() {
         if (window.matchMedia("(max-width: 576px)").matches) {
+           
             $(".nav-pills .nav-link ",).removeClass('active');
             $('.tab-pane').removeClass('active');
 
