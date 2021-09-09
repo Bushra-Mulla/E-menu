@@ -364,16 +364,18 @@
             location.reload();
         }
         $(document).ready(function() {
-        if (window.matchMedia("(max-width: 768px)").matches) {
+        if (window.matchMedia("(max-width: 576px)").matches) {
             $(".nav-pills .nav-link ",).removeClass('active');
             $('.tab-pane').removeClass('active');
 
-            $(".nav-pills .nav-link").on('click',function(e){console.log(';;;;')
+            $(".nav-pills .nav-link").on('click',function(e){
+                console.log('nav link click')
                 $(".nav-pills .nav-link ").addClass('d-none');
                 $(this).removeClass('d-none');
             });
 
-            $(document).on("click", ".taggle", function (e) {console.log('object')
+            $(document).on("click", ".taggle", function (e) {
+                console.log('taggle arrow click')
                 e.stopImmediatePropagation();
                 $('.tab-pane').removeClass('active');
                 $(".nav-pills .nav-link ").removeClass('active');
