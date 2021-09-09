@@ -114,7 +114,7 @@ $(function () {
          focusOnSelect: true,
        });
        if (window.matchMedia("(max-width: 768px)").matches) {
-         $("#comment").slick();
+         $("#comment").slick({ dots: true });
        } 
     });
     function responsive_slide(slideNumber){
