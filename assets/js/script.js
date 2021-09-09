@@ -117,7 +117,6 @@ $(function () {
          $("#comment").slick({
            slidesToShow: 1,
            dots: true,
-           arrows: false,
          });
        } 
     });
