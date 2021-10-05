@@ -4,25 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>من نحن</title>
+    <title>المدونة</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo.svg">
     <!-- BEGIN: CSS-->
-    <link rel="stylesheet" href="../../assets/css/plugin/slick-theme.css">
-    <link rel="stylesheet" href="../../assets/css/plugin/slick.css">
-
     <link rel="stylesheet" href="../../assets/css/bootstrap-rtl.css">
     <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../assets/css/custom.css">
-    
     <!-- END: CSS-->
 </head>
 <body>
 
     <!-- BEGIN: heaader-->
 
-    <nav class="navbar navbar-expand-lg navbar-light p-md-0 shadow-sm mb-5 bg-body rounded">
+    <nav class="navbar navbar-expand-lg navbar-light p-md-0 mb-5 bg-body rounded">
         <a class="navbar-brand" href="#">
             <img src="../../assets/images/logo.svg"height= '54px'alt="">
         </a>
@@ -39,7 +35,7 @@
                             <a class="nav-link" href="../index.html">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="../content-pages/about-us-page.html">تعرف علينا</a>
+                            <a class="nav-link" href="../content-pages/about-us-page.html">تعرف علينا</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="../content-pages/blog-list-page.html">المدونة</a>
@@ -107,108 +103,67 @@
     <!-- BEGIN: Content-->
     <div class="Content">
         <div class="container">
-             <div class="row">
-                <div class="col-12 ">
-                <div class="row no-gutters">
-                    <div class="col-md-6">
-                    <div class="card-body">
-                        <h3 class="card-title text-primary mb-4">من نحن</h3>
-                        <p class="card-text">النجاح المتزايد الذي حققته مواقع التجارة الإلكترونية في جميع أنحاء العالم جعل نمط إقامة المشاريع أكثر واقعية من أي وقت مضى. سواء كنت تبحث عن زيادة لدخلك الشهري، أو تريد البدء في عمل تجاري بدوام كامل أو مجرد تبادل للمنتجات الخاصة بك مع العالم، فيعد أقامة موقع للتجارة الإلكترونية المنصة المثالية لجعل أحلامك حقيقة</p>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent p-0">
+                    <li class="breadcrumb-item"><a href="../index.html">الرئيسية</a></li>
+                    <li class="breadcrumb-item">البحث عن منتج</li>
+                </ol>
+            </nav>
+            <div class="row ">
+                <div class="col-md-3 col-sm-6 col-12 mb-3 ">
+                    
+                    <div class="card card-link h-100">
+                        <a href="menu/meal-detail.html" class="text-dark text-decoration-none">
+                        <img src="../assets/images/1/image-3@2x.png" class="card-img-top" >
+                        <div class="card-body">
+                            <div class="float-left">
+                                <button class="btn-link btn p-0 shadow-none" onclick="show_toast('add')" data-toggle="modal" data-target="#add-product"><i class="fas fa-plus-circle "></i></button>
+                                <button class="btn-link btn p-0 shadow-none" onclick="show_toast('like')"><i class="far fa-heart"></i></button>
+                            </div>
+                            <h5 class="card-title">بيتزا سوبريم</h5>
+                            <div>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p class="card-text">
+                                <span class="text-primary">16</span>
+                                <span>ر.س</span>
+                            </p>
+                        </div></a>
                     </div>
-                    </div>
-                    <div class="col-md-6">
-                    <img src="../../assets/images/2/Rectangle 876.png"class='w-100 rounded h-100'>
-                    </div>
+                    
                 </div>
+                <div class="col-md-3 col-sm-6 col-12 mb-3 ">
+                    
+                    <div class="card card-link h-100">
+                        <a href="menu/meal-detail.html" class="text-dark text-decoration-none">
+                        <img src="../assets/images/1/image-3@2x.png" class="card-img-top" >
+                        <div class="card-body">
+                            <div class="float-left">
+                                <button class="btn-link btn p-0 shadow-none" onclick="show_toast('add')" data-toggle="modal" data-target="#add-product"><i class="fas fa-plus-circle "></i></button>
+                                <button class="btn-link btn p-0 shadow-none" onclick="show_toast('like')"><i class="far fa-heart"></i></button>
+                            </div>
+                            <h5 class="card-title">بيتزا سوبريم</h5>
+                            <div>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p class="card-text">
+                                <span class="text-primary">16</span>
+                                <span>ر.س</span>
+                            </p>
+                        </div></a>
+                    </div>
+                    
                 </div>
             </div>
-
-            <h4 class="text-center text-primary my-5">صور المطعم</h4>
-            <div class="row">
-                <div class="col-sm-6 col-12 mb-2 px-2">
-                    <img src="../../assets/images/2/5.png"class='w-100 h-100'>
-                </div>
-                <div class="col-sm-6 col-12 mb-2">
-                    <div class="row">
-                        <div class="col-sm-6 mb-2 px-2"><img src="../../assets/images/2/4.png"class='w-100'></div>
-                        <div class="col-sm-6 mb-2 px-2"><img src="../../assets/images/2/3.png"class='w-100'></div>
-                        <div class="col-sm-6 px-2 mb-sm-0 mb-2"><img src="../../assets/images/2/asset-1.png"class='w-100'></div>
-                        <div class="col-sm-6 px-2"><img src="../../assets/images/2/asset-4.png"class='w-100'></div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-12  mb-2 px-2">
-                    <img src="../../assets/images/2/asset-1.png"class='w-100'>
-                </div>
-                <div class="col-sm-3 col-12  mb-2 px-2">
-                    <img src="../../assets/images/2/asset-4.png"class='w-100'>
-                </div>
-                <div class="col-sm-3 col-12  mb-2 px-2">
-                    <img src="../../assets/images/2/7.png"class='w-100'>
-                </div>
-                <div class="col-sm-3 col-12  mb-2 px-2">
-                    <img src="../../assets/images/2/4.png"class='w-100'>
-                </div>
-            </div>
-
-            <h4 class="text-center text-primary my-5">طهاتنا المتميزون</h4>
-            <div class="row mx-md-5 slider3 ">
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="card mx-3" >
-                        <img src="../../assets/images/2/chef-3.png" class="card-img-top h-75" alt="...">
-
-                        <div class="card-body">
-                            <h5 class="card-title text-center mb-1"> عبد الرحمن محمد</h5>
-                            <p class="card-text text-muted text-center">صاحب المطعم</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="card mx-3" >
-                        <img src="../../assets/images/2/chef-4.png" class="card-img-top  h-75" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center mb-1">أحمد عبدالله</h5>
-                            <p class="card-text text-muted text-center">رئيس الطهاة</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="card mx-3 " >
-                        <img src="../../assets/images/2/chef-2.png" class="card-img-top h-75" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center mb-1">محمود سالم</h5>
-                            <p class="card-text text-muted text-center">طاه</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="card mx-3" >
-                        <img src="../../assets/images/2/chef-3.png" class="card-img-top h-75" alt="...">
-
-                        <div class="card-body">
-                            <h5 class="card-title text-center mb-1"> عبد الرحمن محمد</h5>
-                            <p class="card-text text-muted text-center">صاحب المطعم</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="card mx-3" >
-                        <img src="../../assets/images/2/chef-4.png" class="card-img-top  h-75" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center mb-1">أحمد عبدالله</h5>
-                            <p class="card-text text-muted text-center">رئيس الطهاة</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="card mx-3 " >
-                        <img src="../../assets/images/2/chef-2.png" class="card-img-top h-75" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center mb-1">محمود سالم</h5>
-                            <p class="card-text text-muted text-center">طاه</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
 
         </div>
     </div>
@@ -279,8 +234,8 @@
 
     <!-- BEGIN: JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/plugin/slick.min.js"></script>
     <script src="../../assets/js/script.js"></script>
     <!-- END: JS-->
 
